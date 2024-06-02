@@ -2,6 +2,8 @@ DROP DATABASE IF EXISTS company_db;
 
 CREATE DATABASE company_db;
 
+\c company_db;
+
 CREATE TABLE department (
     id SERIAL PRIMARY KEY,
     name VARCHAR(30) UNIQUE NOT NULL
@@ -24,5 +26,3 @@ CREATE TABLE employee (
     FOREIGN KEY (role_id) REFERENCES role(id),
     FOREIGN KEY (manager_id) REFERENCES employee(id)
 );
-
-\c company_db;

@@ -2,15 +2,17 @@
   "name": "12-sql-employee-tracker",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "asciiart-logo": "^0.2.7",
+    "express": "^4.19.2",
     "inquirer": "^8.2.4",
     "pg": "^8.11.5"
   }
